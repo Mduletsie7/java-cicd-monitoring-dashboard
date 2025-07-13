@@ -11,7 +11,7 @@ import java.util.Optional;
 @Repository
 public interface ProjectRepository extends JpaRepository<Project, Long> {
     List<Project> findByPlatform(Platform platform);
-    Optional<Project> findbyProjectId(String projectId);
+    Optional<Project> findByProjectId(String projectId);
 
     @Query("Select p FROM Project p where p.name LIKE %:name%")
     List<Project> findByNameContaining(String name);
