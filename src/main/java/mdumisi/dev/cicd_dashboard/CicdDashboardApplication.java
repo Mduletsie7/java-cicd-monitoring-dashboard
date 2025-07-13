@@ -2,11 +2,11 @@ package mdumisi.dev.cicd_dashboard;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-public class cicdDashboardApplication {
+public class CicdDashboardApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(cicdDashboardApplication.class, args);
+		SpringApplication.run(CicdDashboardApplication.class, args);
 	}
 }
